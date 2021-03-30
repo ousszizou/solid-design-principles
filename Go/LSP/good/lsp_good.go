@@ -58,7 +58,7 @@ func main() {
 
 	rc := &rectangle{2, 3}
 	useQuadrangle(rc) // Area should be 20
-	sq := square(5)
+	sq := &square{5}
 	useQuadrangle(sq.rectangle()) // Area should be 50
 
 }
