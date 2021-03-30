@@ -49,7 +49,7 @@ class DBErrorGood extends CustomErrorGood {
   }
 }
 
-const errorDecoratorGood = (customError: CustomErrorBad) => {
+const errorDecoratorGood = (customError: CustomErrorGood) => {
   customError.createErrorMessage();
   customError.logError();
 };
