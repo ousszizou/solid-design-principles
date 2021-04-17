@@ -22,10 +22,4 @@ type UsersRepository struct {
 func (r UsersRepository) GetUsers() {
 	res := r.db.QueryMySQL()
 	//res := r.db.QueryPostgreSQL()
-
-	var users []string
-	for _, u := range res {
-		users = append(users, u)
-	}
-	return users
 }
